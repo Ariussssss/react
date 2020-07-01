@@ -31,6 +31,7 @@ const {
   unstable_IdlePriority: Scheduler_IdlePriority,
 } = Scheduler;
 
+
 if (enableSchedulerTracing) {
   // Provide explicit error message when production+profiling bundle of e.g.
   // react-dom is used with production (non-profiling) bundle of

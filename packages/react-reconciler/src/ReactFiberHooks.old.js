@@ -368,7 +368,7 @@ export function renderWithHooks<Props, SecondArg>(
   workInProgress.memoizedState = null;
   workInProgress.updateQueue = null;
   workInProgress.expirationTime = NoWork;
-
+  
   // The following should have already been reset
   // currentHook = null;
   // workInProgressHook = null;
@@ -1652,7 +1652,6 @@ function dispatchAction<S, A>(
       );
     }
   }
-
   const currentTime = requestCurrentTimeForUpdate();
   const suspenseConfig = requestCurrentSuspenseConfig();
   const expirationTime = computeExpirationForFiber(
